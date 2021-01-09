@@ -1,8 +1,8 @@
-## css-live-screen
+# css-live-screen
 
 <br>
 
-### 🍌 바닐라 자바스크립트를 사용한 CSS 치트 시트
+## 🍌 바닐라 자바스크립트를 사용한 CSS 치트 시트
 
 - HTML5
 - CSS
@@ -10,7 +10,7 @@
 
 <br>
 
-### ⚙️ 로컬환경에서 실행
+## ⚙️ 로컬환경에서 실행
 
 - git clone
 
@@ -29,13 +29,13 @@ $ npm install
 
 <br>
 
-### 📦 설치한 패키지
+## 📦 설치한 패키지
 
 - "bootstrap-icons": "^1.3.0"
 
 <br>
 
-### License
+## License
 
 © 2021 Hyunwoo Lim
 
