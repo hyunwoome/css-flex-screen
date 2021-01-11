@@ -1,30 +1,30 @@
 window.onload = function () {
-	const decreaseButton = document.querySelector('#decrease');
-	const increaseButton = document.querySelector('#increase');
+	const decreaseButtonElement = document.querySelector('#decrease');
+	const increaseButtonElement = document.querySelector('#increase');
+	const paletteArticle = document.querySelector('.palette__article');
 
-	decreaseButton.addEventListener('click', function () {
+	// * Remove Box
+	decreaseButtonElement.addEventListener('click', function () {
 		let inputNumber = parseInt(document.querySelector('#number').value);
 		if (1 < inputNumber) {
 			inputNumber--;
 			document.querySelector('#number').value = inputNumber;
 			removeRandomColorBox();
 
-			// * Remove Box
 			function removeRandomColorBox() {
-				const paletteArticle = document.querySelector('.palette__article');
 				paletteArticle.removeChild(paletteArticle.lastElementChild);
 			}
 		}
 	});
 
-	increaseButton.addEventListener('click', function () {
+	// * Add Box
+	increaseButtonElement.addEventListener('click', function () {
 		let inputNumber = parseInt(document.querySelector('#number').value);
-		if (10 > inputNumber) {
+		if (20 > inputNumber) {
 			inputNumber++;
 			document.querySelector('#number').value = inputNumber;
 			createRandomColorBox(inputNumber);
 
-			// * Add Box
 			function createRandomColorBox(inputNumber) {
 				const divTag = document.createElement('div');
 				const randomColor = Math.floor(Math.random() * 16777215).toString(16);
@@ -32,9 +32,17 @@ window.onload = function () {
 				divTag.style.backgroundColor = `#${randomColor}`;
 				let boxNumber = document.createTextNode(`${inputNumber}`);
 				divTag.appendChild(boxNumber);
-				const paletteArticle = document.querySelector('.palette__article');
 				paletteArticle.appendChild(divTag);
 			}
 		}
+	});
+
+	// * Get Flex Direction
+	const flexDirectionSelectElement = document.querySelector(
+		'.flex-direction__select',
+	);
+	flexDirectionSelectElement.addEventListener('change', function () {
+		let selectedValue = flexDirectionSelectElement.value;
+		paletteArticle.style.flexDirection = selectedValue;
 	});
 };
