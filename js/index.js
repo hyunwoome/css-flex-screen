@@ -7,6 +7,13 @@ window.onload = function () {
 		if (1 < inputNumber) {
 			inputNumber--;
 			document.querySelector('#number').value = inputNumber;
+			removeRandomColorBox();
+
+			// * Remove Box
+			function removeRandomColorBox() {
+				const paletteArticle = document.querySelector('.palette__article');
+				paletteArticle.removeChild(paletteArticle.lastElementChild);
+			}
 		}
 	});
 
@@ -17,7 +24,7 @@ window.onload = function () {
 			document.querySelector('#number').value = inputNumber;
 			createRandomColorBox(inputNumber);
 
-			// * Add Random Color Box
+			// * Add Box
 			function createRandomColorBox(inputNumber) {
 				const divTag = document.createElement('div');
 				const randomColor = Math.floor(Math.random() * 16777215).toString(16);

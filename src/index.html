@@ -4,14 +4,19 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>CSS FLEX SCREEN</title>
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<!-- * Import index.css -->
 		<link rel="stylesheet" href="../css/index.css" />
+
+		<!-- * Import index.js -->
+		<script defer src="../js/index.js"></script>
+
+		<!-- * Google Web font -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap"
 			rel="stylesheet"
 		/>
-		<script defer src="../js/index.js"></script>
 	</head>
 	<body>
 		<!-- * Header -->
@@ -57,7 +62,7 @@
 					<div class="main__article2-operator-container1">
 						<div class="operator__add">
 							<div class="operator__add-header">
-								<p>Add Boxes</p>
+								<p>Remove / Add Boxes</p>
 							</div>
 							<form class="operator__add-button-form">
 								<div class="operator__add-button" id="decrease">-</div>
@@ -73,8 +78,16 @@
 						</div>
 						<div class="operator__add">
 							<div class="operator__add-header">
-								<p>Lorem</p>
+								<p>flex-direction</p>
 							</div>
+							<form class="operator__add-button-form">
+								<select class="flex-direction__select">
+									<option value="row">row</option>
+									<option value="row-reverse">row-reverse</option>
+									<option value="column">column</option>
+									<option value="column-reverse">column-reverse</option>
+								</select>
+							</form>
 						</div>
 						<div class="operator__add">
 							<div class="operator__add-header">
