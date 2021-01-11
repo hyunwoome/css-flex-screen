@@ -1,8 +1,10 @@
 # css-flex-screen
 
+- 바닐라 자바스크립트를 사용한 CSS Flex Attribute Cheat Sheet
+
 <br>
 
-## 🍌 바닐라 자바스크립트를 사용한 CSS Flex 속성 치트 시트
+## 🔨 Tools
 
 - HTML5
 - CSS
@@ -10,7 +12,7 @@
 
 <br>
 
-## ⚙️ 로컬환경에서 실행
+## ⚙️ Execute for Local Environment
 
 - git clone
 
@@ -18,20 +20,22 @@
 $ git clone https://github.com/hyunwoome/css-live-screen.git
 ```
 
-- 패키지 설치
+- Package Install
 
 ```sh
-$ cd css-live-screen
+$ cd css-flex-screen
 $ npm install
 ```
 
-- vscode liveserver로 개발서버 실행
+- Using vscode [liveserver](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 <br>
 
-## 📦 설치한 패키지
+## 📦 Dependencies
 
-- "bootstrap-icons": "^1.3.0"
+| Package         | Desc        |
+| --------------- | ----------- |
+| Bootstrap icons | Using icons |
 
 <br>
 

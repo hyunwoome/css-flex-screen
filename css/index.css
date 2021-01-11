@@ -128,22 +128,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-.box1 {
 	background-color: #a3ddcb;
-}
-
-.box2 {
-	background-color: #e8e9a1;
-}
-
-.box3 {
-	background-color: #e6b566;
-}
-
-.box4 {
-	background-color: #e5707e;
 }
 
 /* * Main__Article 2 */
