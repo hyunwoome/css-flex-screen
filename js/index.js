@@ -2,6 +2,8 @@ window.onload = function () {
 	const decreaseButtonElement = document.querySelector('#decrease');
 	const increaseButtonElement = document.querySelector('#increase');
 	const paletteArticle = document.querySelector('.palette__article');
+	const flexDirectionElement = document.querySelector('#flex-direction');
+	const flexWrapElement = document.querySelector('#flex-wrap');
 
 	// * Remove Box
 	decreaseButtonElement.addEventListener('click', function () {
@@ -38,11 +40,14 @@ window.onload = function () {
 	});
 
 	// * Get Flex Direction
-	const flexDirectionSelectElement = document.querySelector(
-		'.flex-direction__select',
-	);
-	flexDirectionSelectElement.addEventListener('change', function () {
-		let selectedValue = flexDirectionSelectElement.value;
+	flexDirectionElement.addEventListener('change', function () {
+		let selectedValue = flexDirectionElement.value;
 		paletteArticle.style.flexDirection = selectedValue;
+	});
+
+	// * Get Flex Wrap
+	flexWrapElement.addEventListener('change', function () {
+		let selectedValue = flexWrapElement.value;
+		paletteArticle.style.flexWrap = selectedValue;
 	});
 };
