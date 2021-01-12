@@ -2,8 +2,13 @@ window.onload = function () {
 	const decreaseButtonElement = document.querySelector('#decrease');
 	const increaseButtonElement = document.querySelector('#increase');
 	const paletteArticle = document.querySelector('.palette__article');
+	const paletteBox = document.querySelector('.palette__box');
 	const flexDirectionElement = document.querySelector('#flex-direction');
 	const flexWrapElement = document.querySelector('#flex-wrap');
+	const JustifyContentElement = document.querySelector('#justify-content');
+	const alignItemsElement = document.querySelector('#align-items');
+	const alignContentElement = document.querySelector('#align-content');
+	const flexGrowElement = document.querySelector('#flex-grow');
 
 	// * Remove Box
 	decreaseButtonElement.addEventListener('click', function () {
@@ -50,4 +55,32 @@ window.onload = function () {
 		let selectedValue = flexWrapElement.value;
 		paletteArticle.style.flexWrap = selectedValue;
 	});
+
+	// * Get Justify Content
+	JustifyContentElement.addEventListener('change', function () {
+		let selectedValue = JustifyContentElement.value;
+		paletteArticle.style.justifyContent = selectedValue;
+	});
+
+	// * Get Align Items
+	alignItemsElement.addEventListener('change', function () {
+		let selectedValue = alignItemsElement.value;
+		paletteArticle.style.alignItems = selectedValue;
+	});
+
+	//* Get Align Content
+	alignContentElement.addEventListener('change', function () {
+		let selectedValue = alignContentElement.value;
+		paletteArticle.style.alignContent = selectedValue;
+	});
+
+	// * Get Flex Grow
+	flexGrowElement.addEventListener('change', function () {
+		let selectedValue = flexGrowElement.value;
+		paletteBox.style.flexGrow = selectedValue;
+	});
+};
+
+window.onbeforeunload = function () {
+	return 'Data will be lost if you leave the page, are you sure?';
 };
